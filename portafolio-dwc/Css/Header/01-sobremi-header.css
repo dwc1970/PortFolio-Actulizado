@@ -1,0 +1,62 @@
+/*main*/
+.contain-main{
+    display: flex;
+    flex-direction: column;
+    
+}
+/*contenedor general*/
+
+.sobreMi-container{
+    /* height: 464px; */
+    background-image: url(/Img/fondo_png.png) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    height: 333px;
+}
+
+/*titulo*/
+.sobreMi__title{
+    display: flex;
+    color:  #f7f8f7;
+    margin-top: 1rem;
+    margin-left: 16%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.6rem;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    letter-spacing: 0.1em
+}
+/*contenedor parrafo */
+.sobreMi__paraffo__box{
+    /* justify-content: space-around; */
+    align-items:center;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    display: flex;
+    margin: -5px;
+    line-height: 1.5em;
+    width: 35%;
+    font-size: 1.2rem;
+    text-shadow: black 0.2em 0.2em 0.4em;
+}
+/*manipular parrafo*/
+.parrafo{
+    padding: 10px;
+}
+
+/*Responsive*/
+@media (max-width: 800px){
+    .sobreMi-container{
+        flex-wrap: wrap;
+        height: none;
+    }
+    .sobreMi__paraffo__box{
+        margin: 0%;
+        
+        width: 100%;
+        font-size: small;
+    }
+}
+    
